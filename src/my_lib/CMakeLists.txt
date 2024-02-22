@@ -5,6 +5,7 @@
 # incluir en mi librería.
 set(LIBRARY_SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/my_lib.cc"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Objeto.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoActualizacion.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoColision.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoVisibilidad.cpp"
@@ -25,7 +26,7 @@ set(LIBRARY_INCLUDES
 add_library(${LIBRARY_NAME} STATIC ${LIBRARY_SOURCES} ${LIBRARY_HEADERS})
 target_include_directories(${LIBRARY_NAME} PUBLIC ${LIBRARY_INCLUDES})
 
-if(NOT ${IGNORELIBS}) # Ignoro las librerias para subir la doc a  github pages
+if(NOT DEFINED ${IGNORELIBS}) # Ignoro las librerias para subir la doc a  github pages
     target_link_libraries(
         ${LIBRARY_NAME}
         PRIVATE

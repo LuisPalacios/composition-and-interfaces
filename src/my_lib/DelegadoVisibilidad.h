@@ -5,6 +5,8 @@
  */
 class DelegadoVisibilidad {
 public:
+    virtual ~DelegadoVisibilidad() {} // Destructor virtual
+
     virtual void dibuja() = 0;
 };
 

@@ -2,9 +2,10 @@
 #include <iostream>
 
 void Invisible::dibuja() {
-    // No hace nada, el objeto es invisible.
+    // No dibujar nada.
 }
 
 void Visible::dibuja() {
-    std::cout << "Dibujando un objeto en la pantalla." << std::endl;
+    std::cout << "D";
+    //std::cout << "Dibujando objeto." << std::endl;
 }
