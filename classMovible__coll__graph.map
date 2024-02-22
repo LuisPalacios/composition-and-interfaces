@@ -1,0 +1,4 @@
+<map id="Movible" name="Movible">
+<area shape="rect" id="node1" title=" " alt="" coords="53,80,128,107"/>
+<area shape="rect" id="node2" href="$classDelegadoActualizacion.html" title="Clase base abstracta para actualizar estados de objetos." alt="" coords="5,5,176,32"/>
+</map>

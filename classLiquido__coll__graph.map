@@ -1,0 +1,4 @@
+<map id="Liquido" name="Liquido">
+<area shape="rect" id="node1" title=" " alt="" coords="39,80,108,107"/>
+<area shape="rect" id="node2" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones." alt="" coords="5,5,141,32"/>
+</map>
