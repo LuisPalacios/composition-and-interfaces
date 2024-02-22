@@ -1,24 +1,14 @@
-# Composición e interfaces
 
-![C++](https://img.shields.io/badge/C%2B%2B-11%2F14%2F17%2F20%2F23-blue)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Linux Build](https://github.com/franneck94/CppProjectTemplate/workflows/Ubuntu%20CI%20Test/badge.svg)
-[![codecov](https://codecov.io/gh/franneck94/CppProjectTemplate/branch/master/graph/badge.svg)](https://codecov.io/gh/franneck94/CppProjectTemplate)
 
-<br/>
 
-## Introducción
-
-En C++ es importante entender la recomendación de favorecer la 'composición de objetos' frente a la 'herencia de clases'. Este repositorio contiene el ejemplo de la sección **Composition and interfaces** del artículo de la [Wikipedia Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance).
-
-Los ejemplos de C++ de esta sección demuestran el principio de utilizar la composición y las interfaces para lograr la reutilización del código y el polimorfismo. Debido a que el lenguaje C++ no tiene una palabra clave dedicada para declarar interfaces, vamos a usar la **herencia de una clase base abstracta pura**, que es **funcionalmente equivalente a las interfaces** proporcionadas en otros lenguajes, como Java.
+Considerando el siguiente ejemplo C++ que demuestra el principio de utilizar la composición y las interfaces para lograr la reutilización del código y el polimorfismo. Debido a que el lenguaje C++ no tiene una palabra clave dedicada para declarar interfaces, vamos a usar la **herencia de una clase base abstracta pura**, que es **funcionalmente equivalente a las interfaces** proporcionadas en otros lenguajes, como Java.
 
 Creamos las siguientes clases:
 
 - Clase abstracta **DelegadoVisibilidad**, con las subclases **Invisible** y **Visible**, que simulan una forma de indicar cuando mostrar o no un objeto (instancia de **Objeto**) en pantalla .
 - Clase abstracta **DelegadoActualizacion**, con las subclases **Inamovible** y **Movible**, que ofrecen una forma de mover el objeto en pantalla.
 - Clase abstracta **DelegadoColision**, con las subclases **Solido**, **Liquido** y **Gaseoso**, que ofrecen una forma de identificar cómo colisionarán entre sí dos objetos.
-- Clase **Objeto** con miembros para controlar su visibilidad (usando un *DelegadoVisibilidad*), movilidad (usando un *DelegadoActualizacion*), y colision (usando un DelegadoColision). Esta clase tiene métodos que delegan en sus miembros, por ejemplo, *actualiza()* simplemente llama a un método del *DelegadoActualizacion*. 
+- Clase **Objeto** con miembros para controlar su visibilidad (usando un *DelegadoVisibilidad*), movilidad (usando un *DelegadoActualizacion*), y colision (usando un DelegadoColision). Esta clase tiene métodos que delegan en sus miembros, por ejemplo, *actualiza()* simplemente llama a un método del *DelegadoActualizacion*.
 - Un par de subclases concretas **Jugador** y **Humo** que heradan de *Objeto*
 
 <br/>
@@ -44,7 +34,7 @@ class Visible : public DelegadoVisibilidad
 {
 public:
     virtual void dibuja() override {
-        // código para dibujar un modelo en la posición del objeto. 
+        // código para dibujar un modelo en la posición del objeto.
     }
 };
 
@@ -137,6 +127,16 @@ public:
     // ...
 };
 
+class Coche : public Objecto
+{
+public:
+    Coche()
+        : Objecto(new Visible(), new Movible(), new Solido())
+    {}
+
+    // ...
+};
+
 class Humo : public Objecto
 {
 public:
@@ -146,12 +146,23 @@ public:
 
     // ...
 };
+
+class Charco : public Objecto
+{
+public:
+    Charco()
+        : Object(new Visible(), new Inamovible(), new Liquido())
+    {}
+
+    // ...
+};
 ```
 
+Escribe el código del ejemplo usando archivos de cabecera (.h) y archivos de implementación (.cpp),
+siguiendo una estructura típica en proyectos C++ y añade comentarios explicando el propósito de
+cada uno de los elementos y métodos y que sean compatibles con doxygen.
 
-
-<br/>
-
-## Referencias
-
-Repositorio creado desde el template [CppPlantilla](https://github.com/LuisPalacios/CppPlantilla).
+Además, amplia ligeramente las clases y añade un archivo main.cpp para demostrar su uso, donde se
+simule la creación de varios objetos que se mueven de forma aleatoria pon una pantalla virtual,
+y que vaya mostrando con mensajes de texto cuando colisionan y no pasa nada y cuando la colisión
+si que provocaría un accidente

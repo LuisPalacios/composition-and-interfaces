@@ -5,9 +5,16 @@
 # incluir en mi librería.
 set(LIBRARY_SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/my_lib.cc"
+    "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoActualizacion.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoColision.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoVisibilidad.cpp"
     )
 set(LIBRARY_HEADERS
     "${CMAKE_CURRENT_SOURCE_DIR}/my_lib.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoActualizacion.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoColision.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/DelegadoVisibilidad.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Objeto.h"
     )
 set(LIBRARY_INCLUDES
     "./"
