@@ -1,17 +1,17 @@
 // Estándares
-#include <iostream>
-#include <vector>
 #include <chrono>
 #include <cstdlib>
-#include <thread>
 #include <ctime>
+#include <iostream>
+#include <thread>
+#include <vector>
 
 // Librerías externas
 #include <spdlog/spdlog.h>
 
 // Mis variables estáticas e includes
-#include "config.hpp"
 #include "Objeto.h"
+#include "config.hpp"
 
 /**
  * Punto de entrada principal
@@ -19,8 +19,9 @@
 int main(int argc, char **argv)
 {
     // Mensaje de log de bienvenida
-    const auto welcome_message =
-        fmt::format("Bienvenido al programa {} v{}\n", project_name, project_version);
+    const auto welcome_message = fmt::format("Bienvenido al programa {} v{}\n",
+                                             project_name,
+                                             project_version);
     spdlog::info(welcome_message);
 
     // Definir las dimensiones de la pantalla
@@ -45,12 +46,34 @@ int main(int argc, char **argv)
     Tamanio tamCharco = {200, 20};
 
     // Crear delegados y objetos
-    Objeto jugador(new Visible(), new Movible(posJugador, dirJugador, tamJugador, anchoPantalla, altoPantalla), new Solido(), posJugador, dirJugador);
-    Objeto coche(new Visible(), new Movible(posCoche, dirCoche, tamCoche, anchoPantalla, altoPantalla), new Solido(), posCoche, dirCoche);
-    Objeto humo(new Visible(), new Movible(posHumo, dirHumo, tamHumo, anchoPantalla, altoPantalla), new Gaseoso(), posHumo, dirHumo);
-    Objeto charco(new Visible(), new Inamovible(), new Liquido(), posCharco, dirCharco);
+    Objeto jugador(new Visible(),
+                   new Movible(posJugador,
+                               dirJugador,
+                               tamJugador,
+                               anchoPantalla,
+                               altoPantalla),
+                   new Solido(),
+                   posJugador,
+                   dirJugador);
+    Objeto coche(
+        new Visible(),
+        new Movible(posCoche, dirCoche, tamCoche, anchoPantalla, altoPantalla),
+        new Solido(),
+        posCoche,
+        dirCoche);
+    Objeto humo(
+        new Visible(),
+        new Movible(posHumo, dirHumo, tamHumo, anchoPantalla, altoPantalla),
+        new Gaseoso(),
+        posHumo,
+        dirHumo);
+    Objeto charco(new Visible(),
+                  new Inamovible(),
+                  new Liquido(),
+                  posCharco,
+                  dirCharco);
 
-    std::vector<Objeto*> objetos = {&jugador, &coche, &humo, &charco};
+    std::vector<Objeto *> objetos = {&jugador, &coche, &humo, &charco};
 
     // while (true) {
     //     for (auto& obj : objetos) {
@@ -69,8 +92,10 @@ int main(int argc, char **argv)
     //     // Pausa breve para hacer la simulación visible y no sobrecargar la CPU
     //     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     // }
-    while (true) {
-        for (auto& obj : objetos) {
+    while (true)
+    {
+        for (auto &obj : objetos)
+        {
             obj->actualiza();
             obj->dibuja();
             obj->colisiona(objetos.data(), objetos.size());

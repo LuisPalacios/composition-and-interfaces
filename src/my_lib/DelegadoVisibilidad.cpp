@@ -1,11 +1,13 @@
 #include "DelegadoVisibilidad.h"
 #include <iostream>
 
-void Invisible::dibuja() {
+void Invisible::dibuja()
+{
     // No dibujar nada.
 }
 
-void Visible::dibuja() {
+void Visible::dibuja()
+{
     std::cout << "D";
     //std::cout << "Dibujando objeto." << std::endl;
 }

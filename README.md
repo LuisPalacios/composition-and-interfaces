@@ -18,7 +18,7 @@ Creamos las siguientes clases:
 - Clase abstracta **DelegadoVisibilidad**, con las subclases **Invisible** y **Visible**, que simulan una forma de indicar cuando mostrar o no un objeto (instancia de **Objeto**) en pantalla .
 - Clase abstracta **DelegadoActualizacion**, con las subclases **Inamovible** y **Movible**, que ofrecen una forma de mover el objeto en pantalla.
 - Clase abstracta **DelegadoColision**, con las subclases **Solido**, **Liquido** y **Gaseoso**, que ofrecen una forma de identificar cómo colisionarán entre sí dos objetos.
-- Clase **Objeto** con miembros para controlar su visibilidad (usando un *DelegadoVisibilidad*), movilidad (usando un *DelegadoActualizacion*), y colision (usando un DelegadoColision). Esta clase tiene métodos que delegan en sus miembros, por ejemplo, *actualiza()* simplemente llama a un método del *DelegadoActualizacion*. 
+- Clase **Objeto** con miembros para controlar su visibilidad (usando un *DelegadoVisibilidad*), movilidad (usando un *DelegadoActualizacion*), y colision (usando un DelegadoColision). Esta clase tiene métodos que delegan en sus miembros, por ejemplo, *actualiza()* simplemente llama a un método del *DelegadoActualizacion*.
 - Un par de subclases concretas **Jugador** y **Humo** que heradan de *Objeto*
 
 <br/>

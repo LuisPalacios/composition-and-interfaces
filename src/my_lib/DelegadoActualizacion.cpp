@@ -1,15 +1,24 @@
 #include "DelegadoActualizacion.h"
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
-void Inamovible::actualiza() {
+void Inamovible::actualiza()
+{
     // No realizar ninguna acción.
 }
 
-Movible::Movible(Posicion& pos, Direccion& dir, Tamanio tamanio, int anchoPantalla, int altoPantalla)
-    : _pos(pos), _dir(dir), _tamanio(tamanio), _anchoPantalla(anchoPantalla), _altoPantalla(altoPantalla) {}
+Movible::Movible(Posicion &pos,
+                 Direccion &dir,
+                 Tamanio tamanio,
+                 int anchoPantalla,
+                 int altoPantalla)
+    : _pos(pos), _dir(dir), _tamanio(tamanio), _anchoPantalla(anchoPantalla),
+      _altoPantalla(altoPantalla)
+{
+}
 
-void Movible::actualiza() {
+void Movible::actualiza()
+{
     _pos.x += _dir.deltaX;
     _pos.y += _dir.deltaY;
     std::cout << "A";

@@ -1,40 +1,52 @@
 #pragma once
 
-struct Posicion {
+struct Posicion
+{
     int x, y;
 };
 
-struct Direccion {
+struct Direccion
+{
     int deltaX, deltaY;
 };
 
-struct Tamanio {
+struct Tamanio
+{
     int ancho, alto;
 };
 
 /**
  * @brief Clase base abstracta para actualizar estados de objetos.
  */
-class DelegadoActualizacion {
+class DelegadoActualizacion
+{
 public:
-    virtual ~DelegadoActualizacion() {} // Destructor virtual
+    virtual ~DelegadoActualizacion()
+    {
+    } // Destructor virtual
 
     virtual void actualiza() = 0;
 };
 
-class Inamovible : public DelegadoActualizacion {
+class Inamovible : public DelegadoActualizacion
+{
 public:
     void actualiza() override;
 };
 
-class Movible : public DelegadoActualizacion {
-    Posicion& _pos;
-    Direccion& _dir;
+class Movible : public DelegadoActualizacion
+{
+    Posicion &_pos;
+    Direccion &_dir;
     Tamanio _tamanio;
     int _anchoPantalla;
     int _altoPantalla;
 
 public:
-    Movible(Posicion& pos, Direccion& dir, Tamanio tamanio, int anchoPantalla, int altoPantalla);
+    Movible(Posicion &pos,
+            Direccion &dir,
+            Tamanio tamanio,
+            int anchoPantalla,
+            int altoPantalla);
     void actualiza() override;
 };
