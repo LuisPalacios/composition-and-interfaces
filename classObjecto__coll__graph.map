@@ -1,6 +1,0 @@
-<map id="Objecto" name="Objecto">
-<area shape="rect" id="node1" title=" " alt="" coords="240,95,312,121"/>
-<area shape="rect" id="node2" href="$classDelegadoActualizacion.html" title="Clase base abstracta para actualizar estados de objetos." alt="" coords="5,5,176,32"/>
-<area shape="rect" id="node3" href="$classDelegadoVisibilidad.html" title="Clase base abstracta para manejar la visibilidad de los objetos." alt="" coords="200,5,352,32"/>
-<area shape="rect" id="node4" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones." alt="" coords="376,5,512,32"/>
-</map>

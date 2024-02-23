@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ejemplo_22',['ejemplo',['../leeme_8txt.html#a7ef87cde8ceae269a0f1e8465520ce06',1,'leeme.txt']]]
+  ['factorial_30',['factorial',['../my__lib_8cc.html#aea62baaa1b97041829042603549ad2e1',1,'factorial(unsigned int number):&#160;my_lib.cc'],['../my__lib_8h.html#aea62baaa1b97041829042603549ad2e1',1,'factorial(unsigned int number):&#160;my_lib.cc']]]
 ];

@@ -64,13 +64,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classDelegadoColision-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DelegadoColision Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Clase base abstracta para manejar colisiones.  
+<p>Clase base abstracta para manejar colisiones de objetos.  
  <a href="classDelegadoColision.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DelegadoColision_8h_source.html">DelegadoColision.h</a>&gt;</code></p>
@@ -79,25 +80,32 @@ Inheritance diagram for DelegadoColision:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDelegadoColision__inherit__graph.png" border="0" usemap="#aDelegadoColision_inherit__map" alt="Inheritance graph"/></div>
 <map name="aDelegadoColision_inherit__map" id="aDelegadoColision_inherit__map">
-<area shape="rect" title="Clase base abstracta para manejar colisiones." alt="" coords="75,5,211,32"/>
-<area shape="rect" href="classGaseoso.html" title=" " alt="" coords="5,80,84,107"/>
-<area shape="rect" href="classLiquido.html" title=" " alt="" coords="109,80,178,107"/>
-<area shape="rect" href="classSolido.html" title=" " alt="" coords="203,80,265,107"/>
+<area shape="rect" title="Clase base abstracta para manejar colisiones de objetos." alt="" coords="75,5,211,32"/>
+<area shape="rect" href="classGaseoso.html" title="Clase que representa un comportamiento de colisión para objetos gaseosos." alt="" coords="5,80,84,107"/>
+<area shape="rect" href="classLiquido.html" title="Clase que representa un comportamiento de colisión para objetos líquidos." alt="" coords="109,80,178,107"/>
+<area shape="rect" href="classSolido.html" title="Clase que representa un comportamiento de colisión para objetos sólidos." alt="" coords="203,80,265,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada89b897e575da68e8db196d7135ee30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="leeme_8txt.html#a7a74e8c93a1a737698be0bd206005cc8">virtual</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDelegadoColision.html#ada89b897e575da68e8db196d7135ee30">colision</a> (<a class="el" href="classObjeto.html">Objeto</a> objetos[])=0</td></tr>
-<tr class="separator:ada89b897e575da68e8db196d7135ee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dca44b9a7f476ea8df2497055d41eb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="leeme_8txt.html#a7a74e8c93a1a737698be0bd206005cc8">virtual</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDelegadoColision.html#a9dca44b9a7f476ea8df2497055d41eb5">colision</a> (<a class="el" href="classObjecto.html">Objecto</a> objectos[])=0</td></tr>
-<tr class="separator:a9dca44b9a7f476ea8df2497055d41eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad597238ff56adc466d8ceb5698ef3b2c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDelegadoColision.html#ad597238ff56adc466d8ceb5698ef3b2c">~DelegadoColision</a> ()</td></tr>
+<tr class="memdesc:ad597238ff56adc466d8ceb5698ef3b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor virtual para asegurar una correcta limpieza en clases derivadas.  <a href="classDelegadoColision.html#ad597238ff56adc466d8ceb5698ef3b2c">More...</a><br /></td></tr>
+<tr class="separator:ad597238ff56adc466d8ceb5698ef3b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af589c060a644541d319282e4e904821c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDelegadoColision.html#af589c060a644541d319282e4e904821c">colision</a> (<a class="el" href="classObjeto.html">Objeto</a> *objeto, <a class="el" href="classObjeto.html">Objeto</a> *otros[], int numOtros)=0</td></tr>
+<tr class="memdesc:af589c060a644541d319282e4e904821c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método abstracto para manejar colisiones.  <a href="classDelegadoColision.html#af589c060a644541d319282e4e904821c">More...</a><br /></td></tr>
+<tr class="separator:af589c060a644541d319282e4e904821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af287af346a821316c7604e3dd251622b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDelegadoColision.html#af287af346a821316c7604e3dd251622b">colisionan</a> (<a class="el" href="classObjeto.html">Objeto</a> *obj1, <a class="el" href="classObjeto.html">Objeto</a> *obj2)</td></tr>
+<tr class="separator:af287af346a821316c7604e3dd251622b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Clase base abstracta para manejar colisiones. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9dca44b9a7f476ea8df2497055d41eb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dca44b9a7f476ea8df2497055d41eb5">&#9670;&nbsp;</a></span>colision() <span class="overload">[1/2]</span></h2>
+<div class="textblock"><p>Clase base abstracta para manejar colisiones de objetos. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad597238ff56adc466d8ceb5698ef3b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad597238ff56adc466d8ceb5698ef3b2c">&#9670;&nbsp;</a></span>~DelegadoColision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -106,11 +114,55 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="leeme_8txt.html#a7a74e8c93a1a737698be0bd206005cc8">virtual</a> void DelegadoColision::colision </td>
+          <td class="memname">virtual DelegadoColision::~DelegadoColision </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classObjecto.html">Objecto</a>&#160;</td>
-          <td class="paramname"><em>objectos</em>[]</td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor virtual para asegurar una correcta limpieza en clases derivadas. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af589c060a644541d319282e4e904821c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af589c060a644541d319282e4e904821c">&#9670;&nbsp;</a></span>colision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DelegadoColision::colision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classObjeto.html">Objeto</a> *&#160;</td>
+          <td class="paramname"><em>objeto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classObjeto.html">Objeto</a> *&#160;</td>
+          <td class="paramname"><em>otros</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numOtros</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -120,12 +172,31 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classSolido.html#a4b5fd9752abb00b6438d6f34640692e7">Solido</a>, <a class="el" href="classLiquido.html#a3734324ab79381d1dca0985eb865bc25">Liquido</a>, and <a class="el" href="classGaseoso.html#a7f9da06eb1cda788486c194673176387">Gaseoso</a>.</p>
+<p>Método abstracto para manejar colisiones. </p>
+<p>Este método debe ser implementado por las clases derivadas para definir cómo manejan las colisiones.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objetos</td><td>Array de punteros a los objetos con los que puede colisionar. </td></tr>
+    <tr><td class="paramname">numObjetos</td><td>Número de elementos en el array de objetos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classSolido.html#ab01adf953015c550afa678732c2d7feb">Solido</a>, <a class="el" href="classLiquido.html#a4b88a6f40bd27db9b4f34f3cbf0d364c">Liquido</a>, and <a class="el" href="classGaseoso.html#a481583111df7a1d6505f6d538ac29b3f">Gaseoso</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDelegadoColision_af589c060a644541d319282e4e904821c_icgraph.png" border="0" usemap="#aclassDelegadoColision_af589c060a644541d319282e4e904821c_icgraph" alt=""/></div>
+<map name="aclassDelegadoColision_af589c060a644541d319282e4e904821c_icgraph" id="aclassDelegadoColision_af589c060a644541d319282e4e904821c_icgraph">
+<area shape="rect" title="Método abstracto para manejar colisiones." alt="" coords="184,5,379,32"/>
+<area shape="rect" href="classObjeto.html#a93134ff6e672632efe5dc617097467df" title=" " alt="" coords="5,5,136,32"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="ada89b897e575da68e8db196d7135ee30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada89b897e575da68e8db196d7135ee30">&#9670;&nbsp;</a></span>colision() <span class="overload">[2/2]</span></h2>
+<a id="af287af346a821316c7604e3dd251622b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af287af346a821316c7604e3dd251622b">&#9670;&nbsp;</a></span>colisionan()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,27 +205,55 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="leeme_8txt.html#a7a74e8c93a1a737698be0bd206005cc8">virtual</a> void DelegadoColision::colision </td>
+          <td class="memname">bool DelegadoColision::colisionan </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classObjeto.html">Objeto</a>&#160;</td>
-          <td class="paramname"><em>objetos</em>[]</td><td>)</td>
+          <td class="paramtype"><a class="el" href="classObjeto.html">Objeto</a> *&#160;</td>
+          <td class="paramname"><em>obj1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classObjeto.html">Objeto</a> *&#160;</td>
+          <td class="paramname"><em>obj2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classSolido.html#a596c3b9bfbff82992ea623d1eae31a8b">Solido</a>, <a class="el" href="classLiquido.html#a4da8664ce3f9fcc47a9da0d9610161f4">Liquido</a>, and <a class="el" href="classGaseoso.html#a357380c5a3f317986a3602a611dc846b">Gaseoso</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDelegadoColision_af287af346a821316c7604e3dd251622b_cgraph.png" border="0" usemap="#aclassDelegadoColision_af287af346a821316c7604e3dd251622b_cgraph" alt=""/></div>
+<map name="aclassDelegadoColision_af287af346a821316c7604e3dd251622b_cgraph" id="aclassDelegadoColision_af287af346a821316c7604e3dd251622b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,216,57"/>
+<area shape="rect" href="classObjeto.html#a8e372ef340e54d1b9f62696ac5f8b588" title=" " alt="" coords="265,5,413,32"/>
+<area shape="rect" href="classObjeto.html#ad875e08f7d37c029d2ae35a6d0b6425f" title=" " alt="" coords="264,56,413,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDelegadoColision_af287af346a821316c7604e3dd251622b_icgraph.png" border="0" usemap="#aclassDelegadoColision_af287af346a821316c7604e3dd251622b_icgraph" alt=""/></div>
+<map name="aclassDelegadoColision_af287af346a821316c7604e3dd251622b_icgraph" id="aclassDelegadoColision_af287af346a821316c7604e3dd251622b_icgraph">
+<area shape="rect" title=" " alt="" coords="180,31,391,57"/>
+<area shape="rect" href="classLiquido.html#a4b88a6f40bd27db9b4f34f3cbf0d364c" title="Método abstracto para manejar colisiones." alt="" coords="5,5,132,32"/>
+<area shape="rect" href="classSolido.html#ab01adf953015c550afa678732c2d7feb" title="Método abstracto para manejar colisiones." alt="" coords="9,56,129,83"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/composition-and-interfaces/composition-and-interfaces/src/my_lib/<a class="el" href="DelegadoColision_8h_source.html">DelegadoColision.h</a></li>
-<li>/home/runner/work/composition-and-interfaces/composition-and-interfaces/src/my_lib/<a class="el" href="leeme_8txt.html">leeme.txt</a></li>
+<li>/home/runner/work/composition-and-interfaces/composition-and-interfaces/src/my_lib/<a class="el" href="DelegadoColision_8cpp.html">DelegadoColision.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

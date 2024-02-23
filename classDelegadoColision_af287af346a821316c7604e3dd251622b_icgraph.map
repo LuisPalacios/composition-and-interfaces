@@ -1,0 +1,5 @@
+<map id="DelegadoColision::colisionan" name="DelegadoColision::colisionan">
+<area shape="rect" id="node1" title=" " alt="" coords="180,31,391,57"/>
+<area shape="rect" id="node2" href="$classLiquido.html#a4b88a6f40bd27db9b4f34f3cbf0d364c" title="Método abstracto para manejar colisiones." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node3" href="$classSolido.html#ab01adf953015c550afa678732c2d7feb" title="Método abstracto para manejar colisiones." alt="" coords="9,56,129,83"/>
+</map>

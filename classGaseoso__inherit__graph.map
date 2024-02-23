@@ -1,4 +1,4 @@
 <map id="Gaseoso" name="Gaseoso">
-<area shape="rect" id="node1" title=" " alt="" coords="34,80,113,107"/>
-<area shape="rect" id="node2" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones." alt="" coords="5,5,141,32"/>
+<area shape="rect" id="node1" title="Clase que representa un comportamiento de colisión para objetos gaseosos." alt="" coords="34,80,113,107"/>
+<area shape="rect" id="node2" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones de objetos." alt="" coords="5,5,141,32"/>
 </map>

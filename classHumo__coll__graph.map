@@ -1,8 +1,10 @@
 <map id="Humo" name="Humo">
-<area shape="rect" id="node1" title=" " alt="" coords="193,171,255,197"/>
-<area shape="rect" id="node2" href="$classObjecto.html" title=" " alt="" coords="237,95,309,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="479,171,540,197"/>
+<area shape="rect" id="node2" href="$classObjeto.html" title="Clase base para objetos en el juego." alt="" coords="477,95,542,121"/>
 <area shape="rect" id="node3" href="$classDelegadoActualizacion.html" title="Clase base abstracta para actualizar estados de objetos." alt="" coords="5,5,176,32"/>
-<area shape="rect" id="node6" href="$classObjeto.html" title="Clase base para objetos en el juego." alt="" coords="146,95,211,121"/>
-<area shape="rect" id="node4" href="$classDelegadoVisibilidad.html" title="Clase base abstracta para manejar la visibilidad de los objetos." alt="" coords="360,5,512,32"/>
-<area shape="rect" id="node5" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones." alt="" coords="200,5,336,32"/>
+<area shape="rect" id="node4" href="$classDelegadoVisibilidad.html" title="Clase base abstracta para manejar la visibilidad de los objetos." alt="" coords="200,5,352,32"/>
+<area shape="rect" id="node5" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones de objetos." alt="" coords="376,5,512,32"/>
+<area shape="rect" id="node6" href="$structTamanio.html" title=" " alt="" coords="536,5,613,32"/>
+<area shape="rect" id="node7" href="$structDireccion.html" title=" " alt="" coords="637,5,720,32"/>
+<area shape="rect" id="node8" href="$structPosicion.html" title=" " alt="" coords="745,5,821,32"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="DelegadoColision" name="DelegadoColision">
-<area shape="rect" id="node1" title="Clase base abstracta para manejar colisiones." alt="" coords="75,5,211,32"/>
-<area shape="rect" id="node2" href="$classGaseoso.html" title=" " alt="" coords="5,80,84,107"/>
-<area shape="rect" id="node3" href="$classLiquido.html" title=" " alt="" coords="109,80,178,107"/>
-<area shape="rect" id="node4" href="$classSolido.html" title=" " alt="" coords="203,80,265,107"/>
+<area shape="rect" id="node1" title="Clase base abstracta para manejar colisiones de objetos." alt="" coords="75,5,211,32"/>
+<area shape="rect" id="node2" href="$classGaseoso.html" title="Clase que representa un comportamiento de colisión para objetos gaseosos." alt="" coords="5,80,84,107"/>
+<area shape="rect" id="node3" href="$classLiquido.html" title="Clase que representa un comportamiento de colisión para objetos líquidos." alt="" coords="109,80,178,107"/>
+<area shape="rect" id="node4" href="$classSolido.html" title="Clase que representa un comportamiento de colisión para objetos sólidos." alt="" coords="203,80,265,107"/>
 </map>

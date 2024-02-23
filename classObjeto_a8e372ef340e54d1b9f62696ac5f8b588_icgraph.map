@@ -1,0 +1,6 @@
+<map id="Objeto::getPosicion" name="Objeto::getPosicion">
+<area shape="rect" id="node1" title=" " alt="" coords="439,31,587,57"/>
+<area shape="rect" id="node2" href="$classDelegadoColision.html#af287af346a821316c7604e3dd251622b" title=" " alt="" coords="180,31,391,57"/>
+<area shape="rect" id="node3" href="$classLiquido.html#a4b88a6f40bd27db9b4f34f3cbf0d364c" title="Método abstracto para manejar colisiones." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node4" href="$classSolido.html#ab01adf953015c550afa678732c2d7feb" title="Método abstracto para manejar colisiones." alt="" coords="9,56,129,83"/>
+</map>

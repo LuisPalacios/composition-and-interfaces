@@ -1,0 +1,6 @@
+<map id="Solido::colision" name="Solido::colision">
+<area shape="rect" id="node1" title="Método abstracto para manejar colisiones." alt="" coords="5,31,125,57"/>
+<area shape="rect" id="node2" href="$classDelegadoColision.html#af287af346a821316c7604e3dd251622b" title=" " alt="" coords="173,31,384,57"/>
+<area shape="rect" id="node3" href="$classObjeto.html#a8e372ef340e54d1b9f62696ac5f8b588" title=" " alt="" coords="433,5,581,32"/>
+<area shape="rect" id="node4" href="$classObjeto.html#ad875e08f7d37c029d2ae35a6d0b6425f" title=" " alt="" coords="432,56,581,83"/>
+</map>

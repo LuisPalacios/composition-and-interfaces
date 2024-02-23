@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['inamovible_26',['Inamovible',['../classInamovible.html',1,'']]],
-  ['interfaces_27',['interfaces',['../leeme_8txt.html#a6fa3ece99564aa88fe478e6daa56160f',1,'leeme.txt']]],
-  ['invisible_28',['Invisible',['../classInvisible.html',1,'']]]
+  ['jugador_38',['Jugador',['../classJugador.html',1,'Jugador'],['../classJugador.html#a232c46f75691af6210096e5972535d71',1,'Jugador::Jugador()']]]
 ];

@@ -92,38 +92,55 @@ Collaboration diagram for Objeto:</div>
 <div class="dyncontent">
 <div class="center"><img src="classObjeto__coll__graph.png" border="0" usemap="#aObjeto_coll__map" alt="Collaboration graph"/></div>
 <map name="aObjeto_coll__map" id="aObjeto_coll__map">
-<area shape="rect" title="Clase base para objetos en el juego." alt="" coords="243,95,309,121"/>
+<area shape="rect" title="Clase base para objetos en el juego." alt="" coords="477,95,542,121"/>
 <area shape="rect" href="classDelegadoActualizacion.html" title="Clase base abstracta para actualizar estados de objetos." alt="" coords="5,5,176,32"/>
 <area shape="rect" href="classDelegadoVisibilidad.html" title="Clase base abstracta para manejar la visibilidad de los objetos." alt="" coords="200,5,352,32"/>
-<area shape="rect" href="classDelegadoColision.html" title="Clase base abstracta para manejar colisiones." alt="" coords="376,5,512,32"/>
+<area shape="rect" href="classDelegadoColision.html" title="Clase base abstracta para manejar colisiones de objetos." alt="" coords="376,5,512,32"/>
+<area shape="rect" href="structTamanio.html" title=" " alt="" coords="536,5,613,32"/>
+<area shape="rect" href="structDireccion.html" title=" " alt="" coords="637,5,720,32"/>
+<area shape="rect" href="structPosicion.html" title=" " alt="" coords="745,5,821,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8aaa4e4be49959722fc6a89f6e0f51e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a8aaa4e4be49959722fc6a89f6e0f51e6">Objeto</a> (<a class="el" href="classDelegadoVisibilidad.html">DelegadoVisibilidad</a> *v, <a class="el" href="classDelegadoActualizacion.html">DelegadoActualizacion</a> *u, <a class="el" href="classDelegadoColision.html">DelegadoColision</a> *c)</td></tr>
-<tr class="separator:a8aaa4e4be49959722fc6a89f6e0f51e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8972dbf552ea6d287dec38e0378e43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a7e8972dbf552ea6d287dec38e0378e43">Objeto</a> (<a class="el" href="classDelegadoVisibilidad.html">DelegadoVisibilidad</a> *v, <a class="el" href="classDelegadoActualizacion.html">DelegadoActualizacion</a> *a, <a class="el" href="classDelegadoColision.html">DelegadoColision</a> *c, <a class="el" href="structPosicion.html">Posicion</a> pos, <a class="el" href="structDireccion.html">Direccion</a> dir)</td></tr>
+<tr class="separator:a7e8972dbf552ea6d287dec38e0378e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02425fff0768299968af03ac86deb496"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a02425fff0768299968af03ac86deb496">~Objeto</a> ()</td></tr>
+<tr class="separator:a02425fff0768299968af03ac86deb496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf3d2688179bedb4ad49d228e3f539e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a3cf3d2688179bedb4ad49d228e3f539e">actualiza</a> ()</td></tr>
 <tr class="separator:a3cf3d2688179bedb4ad49d228e3f539e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a384fe4f3f4dbf279e087a27ffc042aeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a384fe4f3f4dbf279e087a27ffc042aeb">dibuja</a> ()</td></tr>
 <tr class="separator:a384fe4f3f4dbf279e087a27ffc042aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8358bbc50780426573a5f419465a7443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a8358bbc50780426573a5f419465a7443">colisiona</a> (<a class="el" href="classObjeto.html">Objeto</a> objectos[])</td></tr>
-<tr class="separator:a8358bbc50780426573a5f419465a7443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93134ff6e672632efe5dc617097467df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a93134ff6e672632efe5dc617097467df">colisiona</a> (<a class="el" href="classObjeto.html">Objeto</a> *objetos[], int numObjetos)</td></tr>
+<tr class="separator:a93134ff6e672632efe5dc617097467df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e372ef340e54d1b9f62696ac5f8b588"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPosicion.html">Posicion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a8e372ef340e54d1b9f62696ac5f8b588">getPosicion</a> ()</td></tr>
+<tr class="separator:a8e372ef340e54d1b9f62696ac5f8b588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd9b164a92c0d9e64ca5734fde33220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDireccion.html">Direccion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a5bd9b164a92c0d9e64ca5734fde33220">getDireccion</a> ()</td></tr>
+<tr class="separator:a5bd9b164a92c0d9e64ca5734fde33220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad875e08f7d37c029d2ae35a6d0b6425f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTamanio.html">Tamanio</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#ad875e08f7d37c029d2ae35a6d0b6425f">getTamanio</a> ()</td></tr>
+<tr class="separator:ad875e08f7d37c029d2ae35a6d0b6425f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab9b601704135bfab618dabe8bcfb057f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDelegadoVisibilidad.html">DelegadoVisibilidad</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#ab9b601704135bfab618dabe8bcfb057f">_v</a></td></tr>
 <tr class="separator:ab9b601704135bfab618dabe8bcfb057f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8263926ad9c8f45d865f638676ecf64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDelegadoActualizacion.html">DelegadoActualizacion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#af8263926ad9c8f45d865f638676ecf64">_u</a></td></tr>
-<tr class="separator:af8263926ad9c8f45d865f638676ecf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcf5735b79974de8507033bd756ea88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDelegadoActualizacion.html">DelegadoActualizacion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#afbcf5735b79974de8507033bd756ea88">_a</a></td></tr>
+<tr class="separator:afbcf5735b79974de8507033bd756ea88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c77689398c0088513208eca7e0a3892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDelegadoColision.html">DelegadoColision</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a3c77689398c0088513208eca7e0a3892">_c</a></td></tr>
 <tr class="separator:a3c77689398c0088513208eca7e0a3892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a8c26d57ecb0374f972c3bbd01adbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPosicion.html">Posicion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a50a8c26d57ecb0374f972c3bbd01adbb">_pos</a></td></tr>
+<tr class="separator:a50a8c26d57ecb0374f972c3bbd01adbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e6d09959497efdd50ef5b7e158e7e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDireccion.html">Direccion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a19e6d09959497efdd50ef5b7e158e7e1">_dir</a></td></tr>
+<tr class="separator:a19e6d09959497efdd50ef5b7e158e7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac8dc1e3fc08cdbdcea82f50a3548f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTamanio.html">Tamanio</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#afac8dc1e3fc08cdbdcea82f50a3548f8">_tamanio</a></td></tr>
+<tr class="separator:afac8dc1e3fc08cdbdcea82f50a3548f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clase base para objetos en el juego. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8aaa4e4be49959722fc6a89f6e0f51e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aaa4e4be49959722fc6a89f6e0f51e6">&#9670;&nbsp;</a></span>Objeto()</h2>
+<a id="a7e8972dbf552ea6d287dec38e0378e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8972dbf552ea6d287dec38e0378e43">&#9670;&nbsp;</a></span>Objeto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,18 +155,47 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classDelegadoActualizacion.html">DelegadoActualizacion</a> *&#160;</td>
-          <td class="paramname"><em>u</em>, </td>
+          <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classDelegadoColision.html">DelegadoColision</a> *&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPosicion.html">Posicion</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structDireccion.html">Direccion</a>&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02425fff0768299968af03ac86deb496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02425fff0768299968af03ac86deb496">&#9670;&nbsp;</a></span>~Objeto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Objeto::~Objeto </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -171,11 +217,20 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjeto_a3cf3d2688179bedb4ad49d228e3f539e_cgraph.png" border="0" usemap="#aclassObjeto_a3cf3d2688179bedb4ad49d228e3f539e_cgraph" alt=""/></div>
+<map name="aclassObjeto_a3cf3d2688179bedb4ad49d228e3f539e_cgraph" id="aclassObjeto_a3cf3d2688179bedb4ad49d228e3f539e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,137,39"/>
+<area shape="rect" href="classDelegadoActualizacion.html#a8ca4b4031fdaec0761dc24f09e125c47" title=" " alt="" coords="185,5,356,47"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a8358bbc50780426573a5f419465a7443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8358bbc50780426573a5f419465a7443">&#9670;&nbsp;</a></span>colisiona()</h2>
+<a id="a93134ff6e672632efe5dc617097467df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93134ff6e672632efe5dc617097467df">&#9670;&nbsp;</a></span>colisiona()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,12 +238,31 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Objeto::colisiona </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classObjeto.html">Objeto</a>&#160;</td>
-          <td class="paramname"><em>objectos</em>[]</td><td>)</td>
+          <td class="paramtype"><a class="el" href="classObjeto.html">Objeto</a> *&#160;</td>
+          <td class="paramname"><em>objetos</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numObjetos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjeto_a93134ff6e672632efe5dc617097467df_cgraph.png" border="0" usemap="#aclassObjeto_a93134ff6e672632efe5dc617097467df_cgraph" alt=""/></div>
+<map name="aclassObjeto_a93134ff6e672632efe5dc617097467df_cgraph" id="aclassObjeto_a93134ff6e672632efe5dc617097467df_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,136,32"/>
+<area shape="rect" href="classDelegadoColision.html#af589c060a644541d319282e4e904821c" title="Método abstracto para manejar colisiones." alt="" coords="184,5,379,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -206,10 +280,114 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjeto_a384fe4f3f4dbf279e087a27ffc042aeb_cgraph.png" border="0" usemap="#aclassObjeto_a384fe4f3f4dbf279e087a27ffc042aeb_cgraph" alt=""/></div>
+<map name="aclassObjeto_a384fe4f3f4dbf279e087a27ffc042aeb_cgraph" id="aclassObjeto_a384fe4f3f4dbf279e087a27ffc042aeb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,119,39"/>
+<area shape="rect" href="classDelegadoVisibilidad.html#ab2927890f8b44dc4f84dcba84df0dd42" title=" " alt="" coords="167,5,319,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5bd9b164a92c0d9e64ca5734fde33220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd9b164a92c0d9e64ca5734fde33220">&#9670;&nbsp;</a></span>getDireccion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDireccion.html">Direccion</a> &amp; Objeto::getDireccion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e372ef340e54d1b9f62696ac5f8b588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e372ef340e54d1b9f62696ac5f8b588">&#9670;&nbsp;</a></span>getPosicion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPosicion.html">Posicion</a> &amp; Objeto::getPosicion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjeto_a8e372ef340e54d1b9f62696ac5f8b588_icgraph.png" border="0" usemap="#aclassObjeto_a8e372ef340e54d1b9f62696ac5f8b588_icgraph" alt=""/></div>
+<map name="aclassObjeto_a8e372ef340e54d1b9f62696ac5f8b588_icgraph" id="aclassObjeto_a8e372ef340e54d1b9f62696ac5f8b588_icgraph">
+<area shape="rect" title=" " alt="" coords="439,31,587,57"/>
+<area shape="rect" href="classDelegadoColision.html#af287af346a821316c7604e3dd251622b" title=" " alt="" coords="180,31,391,57"/>
+<area shape="rect" href="classLiquido.html#a4b88a6f40bd27db9b4f34f3cbf0d364c" title="Método abstracto para manejar colisiones." alt="" coords="5,5,132,32"/>
+<area shape="rect" href="classSolido.html#ab01adf953015c550afa678732c2d7feb" title="Método abstracto para manejar colisiones." alt="" coords="9,56,129,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad875e08f7d37c029d2ae35a6d0b6425f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad875e08f7d37c029d2ae35a6d0b6425f">&#9670;&nbsp;</a></span>getTamanio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTamanio.html">Tamanio</a> &amp; Objeto::getTamanio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjeto_ad875e08f7d37c029d2ae35a6d0b6425f_icgraph.png" border="0" usemap="#aclassObjeto_ad875e08f7d37c029d2ae35a6d0b6425f_icgraph" alt=""/></div>
+<map name="aclassObjeto_ad875e08f7d37c029d2ae35a6d0b6425f_icgraph" id="aclassObjeto_ad875e08f7d37c029d2ae35a6d0b6425f_icgraph">
+<area shape="rect" title=" " alt="" coords="439,31,588,57"/>
+<area shape="rect" href="classDelegadoColision.html#af287af346a821316c7604e3dd251622b" title=" " alt="" coords="180,31,391,57"/>
+<area shape="rect" href="classLiquido.html#a4b88a6f40bd27db9b4f34f3cbf0d364c" title="Método abstracto para manejar colisiones." alt="" coords="5,5,132,32"/>
+<area shape="rect" href="classSolido.html#ab01adf953015c550afa678732c2d7feb" title="Método abstracto para manejar colisiones." alt="" coords="9,56,129,83"/>
+</map>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="afbcf5735b79974de8507033bd756ea88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcf5735b79974de8507033bd756ea88">&#9670;&nbsp;</a></span>_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDelegadoActualizacion.html">DelegadoActualizacion</a>* Objeto::_a</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3c77689398c0088513208eca7e0a3892"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c77689398c0088513208eca7e0a3892">&#9670;&nbsp;</a></span>_c</h2>
 
@@ -232,8 +410,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af8263926ad9c8f45d865f638676ecf64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8263926ad9c8f45d865f638676ecf64">&#9670;&nbsp;</a></span>_u</h2>
+<a id="a19e6d09959497efdd50ef5b7e158e7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e6d09959497efdd50ef5b7e158e7e1">&#9670;&nbsp;</a></span>_dir</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +420,51 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDelegadoActualizacion.html">DelegadoActualizacion</a>* Objeto::_u</td>
+          <td class="memname"><a class="el" href="structDireccion.html">Direccion</a> Objeto::_dir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50a8c26d57ecb0374f972c3bbd01adbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a8c26d57ecb0374f972c3bbd01adbb">&#9670;&nbsp;</a></span>_pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPosicion.html">Posicion</a> Objeto::_pos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afac8dc1e3fc08cdbdcea82f50a3548f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac8dc1e3fc08cdbdcea82f50a3548f8">&#9670;&nbsp;</a></span>_tamanio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTamanio.html">Tamanio</a> Objeto::_tamanio</td>
         </tr>
       </table>
   </td>
@@ -276,8 +498,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/composition-and-interfaces/composition-and-interfaces/src/my_lib/<a class="el" href="Objeto_8h_source.html">Objeto.h</a></li>
+<li>/home/runner/work/composition-and-interfaces/composition-and-interfaces/src/my_lib/<a class="el" href="Objeto_8cpp.html">Objeto.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

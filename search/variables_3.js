@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ejemplo_98',['ejemplo',['../leeme_8txt.html#a7ef87cde8ceae269a0f1e8465520ce06',1,'leeme.txt']]]
+  ['x_120',['x',['../structPosicion.html#ab08736be47b9b6366a7de49d083454f0',1,'Posicion']]]
 ];

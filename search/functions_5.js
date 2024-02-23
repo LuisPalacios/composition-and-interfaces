@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jugador_85',['Jugador',['../classJugador.html#a232c46f75691af6210096e5972535d71',1,'Jugador::Jugador()'],['../classJugador.html#a232c46f75691af6210096e5972535d71',1,'Jugador::Jugador()']]]
+  ['humo_98',['Humo',['../classHumo.html#af04546154f06046b52897b756324e9bc',1,'Humo']]]
 ];

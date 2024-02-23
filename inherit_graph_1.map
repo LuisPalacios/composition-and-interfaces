@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones." alt="" coords="5,56,141,83"/>
-<area shape="rect" id="node2" href="$classGaseoso.html" title=" " alt="" coords="189,5,268,32"/>
-<area shape="rect" id="node3" href="$classLiquido.html" title=" " alt="" coords="194,56,263,83"/>
-<area shape="rect" id="node4" href="$classSolido.html" title=" " alt="" coords="197,107,260,133"/>
+<area shape="rect" id="node1" href="$classDelegadoColision.html" title="Clase base abstracta para manejar colisiones de objetos." alt="" coords="5,56,141,83"/>
+<area shape="rect" id="node2" href="$classGaseoso.html" title="Clase que representa un comportamiento de colisión para objetos gaseosos." alt="" coords="189,5,268,32"/>
+<area shape="rect" id="node3" href="$classLiquido.html" title="Clase que representa un comportamiento de colisión para objetos líquidos." alt="" coords="194,56,263,83"/>
+<area shape="rect" id="node4" href="$classSolido.html" title="Clase que representa un comportamiento de colisión para objetos sólidos." alt="" coords="197,107,260,133"/>
 </map>
